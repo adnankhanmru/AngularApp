@@ -1,0 +1,17 @@
+
+    <div>
+        <div>ID is {{customer.customerId}}</div>
+        <div>Name is {{customer.customerName}}</div>
+        <div>Salary is {{customer.customerSalary}}</div>
+        
+        <div>ID is {{customer1[0].customerId}}</div>
+        <div>Name is {{customer1[0].customerName}}</div>
+        <div>Salary is {{customer1[0].customerSalary}}</div>
+    </div>
+    <table>
+        <tr *ngFor="let c of customer1">
+            <td>{{c.customerId}}</td>
+            <td>{{c.customerName}}</td>
+            <td>{{c.customerSalary}}</td>
+        </tr>
+    </table>
